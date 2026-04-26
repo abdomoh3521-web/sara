@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>سارة وليلي | هدية عاطفية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="loading-screen active" id="loadingScreen">
+    <div class="loading-panel">
+      <div class="loader-heart"></div>
+      <p>جارٍ إعداد عالم سارة...</p>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <span id="progressLabel">0%</span>
+    </div>
+  </div>
+
+  <div class="page" id="pageRoot">
+    <canvas id="webglCanvas"></canvas>
+
+    <div class="ui-layer">
+      <header class="topbar">
+        <div class="brand">هدية سارة</div>
+        
+      </header>
+
+      <main class="scroll-container">
+        <section class="section hero-section" id="heroSection">
+          <div class="hero-copy">
+            <p class="eyebrow">إلى سارة</p>
+            <h1>يا سارة… أنتِ مش لوحدك 🤍</h1>
+            <p class="hero-text">هذا العالم الحميم مصنوع لكي تشعري بالأمان والدفء، وتذكري أن ليلي دايمًا جنبك. </p>
+            <div class="hero-actions">
+              <button class="interactive-button" id="joyButton">اضغطي لزيادة السعادة 💖</button>
+              <button class="interactive-button secondary" id="messageButton">رسالة من ليلي</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section memories-section" id="memoriesSection">
+          <div class="section-copy">
+            <p class="section-intro">ذكرياتنا</p>
+            <h2>لحظات حلوة محفورة في القلب</h2>
+            <p>كل ذكرى هنا كأنها بطاقات طائرة داخل عالم ثلاثي الأبعاد.</p>
+          </div>
+          <div class="cards-grid">
+            <article class="memory-card">
+              <div class="card-layer"></div>
+              <h3>اجمل مواقف حصلت بينا</h3>
+              <p>اوقات كتير كانت بتدعمني في اي قرار اخدو كانت لو في حاجه معايا مش عارفه اخد قرار فيها كانت تحاول معايا ونحل الموضوع سوي عمرها ما سابتني في اي وقت كنت محتاجالها فيه رغم اننا مش شوفنا بعض بس كانت هي امي واختي وصحبتي الي واقفه في ضهري طول الوقت</p>
+            </article>
+            
+          </div>
+        </section>
+
+        <section class="section friendship-section" id="friendshipSection">
+          <div class="section-copy cinematic-copy">
+            <p class="section-intro">الصداقة</p>
+            <h2>مش كل الناس بتكمل… بس ليلي دايمًا جنب سارة 🤍</h2>
+          </div>
+        </section>
+
+        <section class="section final-section" id="finalSection">
+          <div class="section-copy">
+            <p class="section-intro">النهاية</p>
+            <h2>الموقع ده معمول مخصوص عشان أشوفك مبتسمة يا سارة 🌸</h2>
+            <p>– من ليلي 🤍</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="glass-modal" id="messageModal" aria-hidden="true">
+      <div class="modal-panel">
+        <button class="close-modal" id="closeModal">×</button>
+        <h3>رسالة خاصة من ليلي</h3>
+        <p>سارة، أنتِ النور في أيامي، ووجودك معي هو أجمل أمان. كل لحظة معاكِ بحس روحي أهدى. <a href="https://youtu.be/mZvk3sgq2cw?si=m-uHem7p-acsvQVH" target="_blank">اضغطى هنا للاستماع</a></p>
+        <div class="modal-badge">🤍</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
